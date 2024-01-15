@@ -16,7 +16,7 @@ SyncSphere is a collaborative project management app designed to streamline your
 - **Board Limits:** Set board limits for each organization to maintain clarity.
 - **Stripe Subscription:** Enable Stripe subscriptions for organizations, unlocking unlimited boards.
 - **Landing Page:** A well-crafted landing page to introduce users to SyncSphere's capabilities.
-- **Database:** Utilizes MySQL with Prisma ORM for robust data management.
+- **Database:** Utilizes PostgreSQL with Prisma ORM for robust data management.
 - **UI Frameworks:** Employs shadcnUI and TailwindCSS for a visually appealing and responsive user interface.
 
 
@@ -24,10 +24,10 @@ Visit [SyncSphere Website](https://syncsphere.com) to experience the power of co
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your-username/syncsphere.git`
+1. Clone the repository: `git clone https://github.com/sd-cnd/syncsphere.git`
 2. Navigate to the project directory: `cd syncsphere`
 3. Install dependencies: `npm install`
-4. Set up your MySQL database and update the connection details in the configuration.
+4. Set up your PostgreSQL database and update the connection details in the configuration.
 5. Set up environment variables:
    - Copy `.env.example` to `.env`.
    - Fill in the necessary details in the `.env` file.
