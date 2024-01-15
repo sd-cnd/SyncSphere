@@ -1,0 +1,69 @@
+1. In Next.js, the convention of having components named with (text) and containing page.tsx is related to automatic static optimization (also known as Automatic Static Optimization or ASO).
+
+Next.js supports automatic static optimization, where it generates static HTML for pages that do not have server-side rendering (SSR) or data fetching. Pages that don't have dynamic data fetching and can be pre-rendered at build time are considered as statically optimized pages.
+
+Here's how this convention typically works:
+
+(text) Component:
+
+The (text) component is a convention used to represent a component that will be statically optimized.
+This component usually contains the static content or structure of the page, and it doesn't perform any dynamic data fetching or server-side rendering.
+page.tsx:
+
+The page.tsx file is where you define the actual Next.js page component.
+It might import the (text) component and use it to structure the static parts of the page.
+This is where you may include any dynamic data fetching, server-side rendering logic, or additional components that contribute to the dynamic aspects of the page.
+Here's a simplified example to illustrate the concept:
+
+jsx
+Copy code
+// components/(text).tsx
+import React from 'react';
+
+const TextComponent = () => {
+  return (
+    <div>
+      <h1>This is a static text component</h1>
+      <p>Static content goes here...</p>
+    </div>
+  );
+};
+
+export default TextComponent;
+jsx
+Copy code
+// pages/index.tsx
+import React from 'react';
+import TextComponent from '../components/(text)';
+
+const HomePage = () => {
+  // Dynamic data fetching or additional components for the page
+  // ...
+
+  return (
+    <div>
+      <TextComponent /> {/* Static content from (text) component */}
+      {/* Dynamic content or additional components */}
+    </div>
+  );
+};
+
+export default HomePage;
+By structuring your components in this way, Next.js can identify which parts of the page are static and can be pre-rendered at build time. This separation allows for efficient static optimization, resulting in faster page loads and improved performance. Keep in mind that while this convention is common, it's not mandatory, and you can structure your components and pages based on your specific needs.
+
+
+
+
+
+2. _components/ or components/ Directory:
+Shared or Reusable Components:
+
+The _components (or components) directory is often used to store components that are shared across multiple pages or sections of your application.
+These components are typically not intended to be pages themselves but are rather building blocks used by various pages.
+Structure and Organization:
+
+Inside the _components directory, you might have subdirectories to further organize your components based on functionality or purpose. For example, you could have directories like common/, ui/, layout/, etc.
+This helps keep your project organized as it grows, making it easier to locate and manage your reusable components.
+Avoiding Ambiguity:
+
+The use of a prefix like _components (or simply components) helps avoid naming conflicts with the pages directory. Since Next.js uses a file-based routing system, naming conflicts could arise if components have the same name as pages.
