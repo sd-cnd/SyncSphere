@@ -37,7 +37,7 @@ const MarketingPage = () => {
           No 1 task managment
         </div> */}
         <h1 className="text-3xl md:text-6xl text-center text-neutral-800 mb-6">
-          <span className="text-white">SyncSphere helps team move</span>
+          <span className="text-white"><span className="text-orange-500">SyncSphere </span>helps team move</span>
         </h1>
         <div className="text-3xl md:text-6xl bg-gradient-to-r from-yellow-600 to-violet-600 text-white px-4 p-2 rounded-md pb-4 w-fit bg-clip-text">
           work forward.
@@ -47,7 +47,7 @@ const MarketingPage = () => {
         "text-sm md:text-xl text-neutral-400 mt-4 max-w-xs md:max-w-2xl text-center mx-auto",
         textFont.className,
       )}>
-        Empower your team&apos;s potential with SyncSphere — where collaboration meets innovation. Tailored for any workspace, from high rises to home offices, SyncSphere redefines productivity. Break free from the ordinary, experience the extraordinary.
+        Empower your team&apos;s potential with <span className="text-orange-500">SyncSphere </span>— where collaboration meets innovation. Tailored for any workspace, from high rises to home offices, SyncSphere redefines productivity. Break free from the ordinary, experience the extraordinary.
       </div>
       <Button className="mt-6" size="lg" asChild>
         <Link href="/sign-up" className="group inline-block rounded bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-black focus:outline-none focus:ring active:text-opacity-75">

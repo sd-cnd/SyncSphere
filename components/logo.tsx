@@ -22,7 +22,7 @@ export const Logo = () => {
           "text-lg text-neutral-700 pt-2 pb-1",
           headingFont.className,
         )}>
-          <span className="text-white">SyncSphere</span>
+          <span className="text-orange-500">SyncSphere</span>
         </p>
       </div>
     </Link>
