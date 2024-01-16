@@ -27,11 +27,17 @@ export const Navbar = () => {
         </FormPopover>
       </div>
       <div className="ml-auto flex items-center gap-x-2">
+      <style jsx>{`
+          .organization-switcher-text {
+            color: black;
+          }
+        `}</style>
         <OrganizationSwitcher
           hidePersonal
           afterCreateOrganizationUrl="/organization/:id"
           afterLeaveOrganizationUrl="/select-org"
           afterSelectOrganizationUrl="/organization/:id"
+          className="organization-switcher-text"
           appearance={{
             elements: {
               rootBox: {
