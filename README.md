@@ -1,4 +1,4 @@
-[![SyncSphere](banner-image-url)](https://syncsphere.com)
+[![SyncSphere](https://i.postimg.cc/J0D23z8F/Screenshot-2024-01-20-162142.png)](https://syncsphere.vercel.app/)
 
 SyncSphere is a collaborative project management app designed to streamline your workflow and enhance team collaboration. With a focus on simplicity and efficiency, SyncSphere offers a range of features to make project management a breeze.
 
@@ -20,7 +20,7 @@ SyncSphere is a collaborative project management app designed to streamline your
 - **UI Frameworks:** Employs shadcnUI and TailwindCSS for a visually appealing and responsive user interface.
 
 
-Visit [SyncSphere Website](https://syncsphere.com) to experience the power of collaborative project management.
+Visit [SyncSphere Website](https://syncsphere.vercel.app/) to experience the power of collaborative project management.
 
 ## Getting Started
 
